@@ -627,7 +627,7 @@ const buildHTMLReportURL = async ({
   ciProvider: string;
 }) => {
   const reportHTMLFilename = await getHTMLReportFilename(reportDir);
-  return artefactUrl + reportDir + "/" + reportHTMLFilename;
+  return artefactUrl + "/" + reportDir + "/" + reportHTMLFilename;
 };
 const getArtefactUrl = async ({
   vcsRoot,
